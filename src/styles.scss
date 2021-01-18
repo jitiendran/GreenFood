@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #b6e655;
+$black: #000;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    display: flex;
+    padding: 1em;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    img{
+        width: 7.5em;
+        height: 6.5em;
+    }
+    nav{
+        padding: 1.5em;
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: $black;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 500;
+            &:hover{
+                color: $primary-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
